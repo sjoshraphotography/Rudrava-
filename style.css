@@ -232,19 +232,19 @@ img {
    HERO TEXT ANIMATION
 ========================= */
 .hero-text .eyebrow {
-    animation: heroFadeUp 0.8s ease-out 4.8s both;
+    animation: heroFadeUp 0.8s ease-out 4.3s both;
 }
 
 .hero-text h1 {
-    animation: heroFadeUp 0.9s ease-out 4.95s both;
+    animation: heroFadeUp 0.9s ease-out 4.45s both;
 }
 
 .hero-description {
-    animation: heroFadeUp 0.9s ease-out 5.1s both;
+    animation: heroFadeUp 0.9s ease-out 4.6s both;
 }
 
 .hero-buttons {
-    animation: heroFadeUp 0.9s ease-out 5.25s both;
+    animation: heroFadeUp 0.9s ease-out 4.75s both;
 }
 
 
