@@ -478,11 +478,11 @@ transform: none;
 }
 
 .about.show .about-number {
-    animation: aboutReveal 0.8s ease-out 0.1s both;
+    animation: aboutReveal 0.8s ease-out 0.25s both;
 }
 
 .about.show .about-text {
-    animation: aboutReveal 0.9s ease-out 0.25s both;
+    animation: aboutReveal 0.9s ease-out 0.45s both;
 }
 
 @keyframes aboutReveal {
