@@ -981,11 +981,8 @@ footer {
 }
 /* =========================================
    SUBTLE PREMIUM TEXTURE
-   ========================================= */
-
-/* =========================================
-   RUDRAVA TEXTURE TEST
-   ========================================= */
+   ========================================= 
+/* PREMIUM SUBTLE TEXTURE */
 
 .hero,
 .about,
@@ -993,42 +990,22 @@ footer {
 .process,
 .contact {
     background-color: #eee6da !important;
-
     background-image:
-        repeating-linear-gradient(
-            0deg,
-            rgba(44, 33, 26, 0.035) 0px,
-            rgba(44, 33, 26, 0.035) 1px,
-            transparent 1px,
-            transparent 4px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            rgba(44, 33, 26, 0.025) 0px,
-            rgba(44, 33, 26, 0.025) 1px,
-            transparent 1px,
-            transparent 4px
+        radial-gradient(
+            rgba(44, 33, 26, 0.035) 0.7px,
+            transparent 0.7px
         ) !important;
+    background-size: 7px 7px !important;
 }
 
 .services,
 .pricing,
 footer {
     background-color: #2c211a !important;
-
     background-image:
-        repeating-linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 0.025) 0px,
-            rgba(255, 255, 255, 0.025) 1px,
-            transparent 1px,
-            transparent 4px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.018) 0px,
-            rgba(255, 255, 255, 0.018) 1px,
-            transparent 1px,
-            transparent 4px
+        radial-gradient(
+            rgba(245, 240, 232, 0.025) 0.7px,
+            transparent 0.7px
         ) !important;
+    background-size: 7px 7px !important;
 }
