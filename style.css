@@ -228,7 +228,37 @@ img {
     gap: 12px;
     flex-wrap: wrap;
 }
+/* =========================
+   HERO TEXT ANIMATION
+========================= */
 
+.hero-text .eyebrow {
+    animation: heroFadeUp 0.8s ease-out both;
+}
+
+.hero-text h1 {
+    animation: heroFadeUp 0.9s ease-out 0.15s both;
+}
+
+.hero-description {
+    animation: heroFadeUp 0.9s ease-out 0.3s both;
+}
+
+.hero-buttons {
+    animation: heroFadeUp 0.9s ease-out 0.45s both;
+}
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* =====================================================
    HERO CARD
