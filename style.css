@@ -535,7 +535,36 @@ transform: none;
     font-size: 12px;
     opacity: 0.55;
 }
+/* WORK SCROLL ANIMATION */
 
+.work-card {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+.work.show .work-card:nth-child(1) {
+    animation: workFadeUp 0.8s ease-out 0.15s both;
+}
+
+.work.show .work-card:nth-child(2) {
+    animation: workFadeUp 0.8s ease-out 0.3s both;
+}
+
+.work.show .work-card:nth-child(3) {
+    animation: workFadeUp 0.8s ease-out 0.45s both;
+}
+
+@keyframes workFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* =====================================================
    PRICING
