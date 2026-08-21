@@ -967,3 +967,10 @@ footer {
         pointer-events: none;
     }
 }
+@media (max-width: 600px) {
+
+    .intro-logo {
+        width: 260px;
+    }
+
+}
