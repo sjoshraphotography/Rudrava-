@@ -249,8 +249,8 @@ img {
 .hero-card::before {
     content: "";
     position: absolute;
-    width: 430px;
-    height: 430px;
+    width: 300px;
+    height: 300px;
 
     right: -80px;
     bottom: -80px;
@@ -991,8 +991,8 @@ footer {
 }
 @media (max-width: 600px) {
     .hero-card::before {
-        width: 350px;
-        height: 350px;
+        width: 230px;
+        height: 230px;
         right: -70px;
         bottom: -60px;
         opacity: 0.055;
