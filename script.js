@@ -83,22 +83,22 @@ if (aboutSection) {
 }
 // WORK SCROLL ANIMATION
 
-const workSection = document.querySelector('#work');
+const workCards = document.querySelectorAll('.work-card');
 
-if (workSection) {
-    const workObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    workSection.classList.add('show');
-                    workObserver.unobserve(workSection);
-                }
-            });
-        },
-        {
-            threshold: 0.15
-        }
-    );
+const workObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                workObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
 
-    workObserver.observe(workSection);
-}
+workCards.forEach((card) => {
+    workObserver.observe(card);
+});
