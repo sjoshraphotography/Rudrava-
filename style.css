@@ -1196,3 +1196,23 @@ footer {
         opacity: 0.055 !important;
     }
 }
+/* PRICING GET STARTED BUTTON */
+
+.pricing .primary-button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 12px;
+    background: #f5f0e8;
+    color: #2c211b;
+    border: 1px solid #f5f0e8;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(245, 240, 232, 0);
+}
+
+.pricing .primary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(245, 240, 232, 0.18);
+}
