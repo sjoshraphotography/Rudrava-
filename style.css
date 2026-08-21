@@ -64,13 +64,13 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    width: 140px;
+    width: 80px;
     height: auto;
     overflow: visible;
 }
 
 .logo img {
-    width: 140px;
+    width: 80px;
     height: auto;
     display: block;
     mix-blend-mode: multiply;
@@ -232,21 +232,20 @@ img {
    HERO TEXT ANIMATION
 ========================= */
 .hero-text .eyebrow {
-    animation: heroFadeUp 0.8s ease-out 4.3s both;
+    animation: heroFadeUp 0.8s ease-out 3.5s both;
 }
 
 .hero-text h1 {
-    animation: heroFadeUp 0.9s ease-out 4.45s both;
+    animation: heroFadeUp 0.9s ease-out 3.65s both;
 }
 
 .hero-description {
-    animation: heroFadeUp 0.9s ease-out 4.6s both;
+    animation: heroFadeUp 0.9s ease-out 3.8s both;
 }
 
 .hero-buttons {
-    animation: heroFadeUp 0.9s ease-out 4.75s both;
+    animation: heroFadeUp 0.9s ease-out 3.95s both;
 }
-
 
 @keyframes heroFadeUp {
     from {
@@ -259,7 +258,6 @@ img {
         transform: translateY(0);
     }
 }
-
 /* =====================================================
    HERO CARD
    ===================================================== */
