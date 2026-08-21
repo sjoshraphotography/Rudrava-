@@ -40,3 +40,23 @@ window.addEventListener("scroll", function () {
     }
 
 });
+// SERVICES SCROLL ANIMATION
+
+const serviceCards = document.querySelectorAll('.service-card');
+
+const serviceObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+serviceCards.forEach((card) => {
+    serviceObserver.observe(card);
+});
