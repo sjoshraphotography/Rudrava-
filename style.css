@@ -984,31 +984,51 @@ footer {
    ========================================= */
 
 /* =========================================
-   PREMIUM PAPER TEXTURE
+   RUDRAVA TEXTURE TEST
    ========================================= */
 
 .hero,
 .about,
 .work,
-.process {
-    background-color: #eee6da;
+.process,
+.contact {
+    background-color: #eee6da !important;
+
     background-image:
-        radial-gradient(
-            rgba(44, 33, 26, 0.055) 0.8px,
-            transparent 0.8px
-        );
-    background-size: 4px 4px;
+        repeating-linear-gradient(
+            0deg,
+            rgba(44, 33, 26, 0.035) 0px,
+            rgba(44, 33, 26, 0.035) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(44, 33, 26, 0.025) 0px,
+            rgba(44, 33, 26, 0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        ) !important;
 }
 
 .services,
 .pricing,
-.contact,
 footer {
-    background-color: #2c211a;
+    background-color: #2c211a !important;
+
     background-image:
-        radial-gradient(
-            rgba(255, 255, 255, 0.045) 0.8px,
-            transparent 0.8px
-        );
-    background-size: 4px 4px;
+        repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.025) 0px,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.018) 0px,
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px,
+            transparent 4px
+        ) !important;
 }
