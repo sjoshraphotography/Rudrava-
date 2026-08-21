@@ -993,7 +993,7 @@ footer {
     .hero-card::before {
         width: 230px;
         height: 230px;
-        right: 5px;
+        right: 25px;
         bottom: 60px ;
         opacity: 0.055;
     }
