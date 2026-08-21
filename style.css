@@ -974,3 +974,8 @@ footer {
     }
 
 }
+@media (max-width: 600px) {
+    .about {
+        padding-bottom: 60px;
+    }
+}
