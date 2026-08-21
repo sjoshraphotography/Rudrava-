@@ -40,3 +40,65 @@ window.addEventListener("scroll", function () {
     }
 
 });
+// SERVICES SCROLL ANIMATION
+
+const serviceCards = document.querySelectorAll('.service-card');
+
+const serviceObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+serviceCards.forEach((card) => {
+    serviceObserver.observe(card);
+});
+// ABOUT SCROLL ANIMATION
+
+const aboutSection = document.querySelector('#about');
+
+if (aboutSection) {
+    const aboutObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add('show');
+                    aboutObserver.unobserve(aboutSection);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    aboutObserver.observe(aboutSection);
+}
+// WORK SCROLL ANIMATION
+
+const workCards = document.querySelectorAll('.work-card');
+
+const workObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                workObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+workCards.forEach((card) => {
+    workObserver.observe(card);
+});

@@ -64,13 +64,13 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    width: 175px;
+    width: 80px;
     height: auto;
     overflow: visible;
 }
 
 .logo img {
-    width: 175px;
+    width: 80px;
     height: auto;
     display: block;
     mix-blend-mode: multiply;
@@ -228,8 +228,36 @@ img {
     gap: 12px;
     flex-wrap: wrap;
 }
+/* =========================
+   HERO TEXT ANIMATION
+========================= */
+.hero-text .eyebrow {
+    animation: heroFadeUp 0.8s ease-out 3.5s both;
+}
 
+.hero-text h1 {
+    animation: heroFadeUp 0.9s ease-out 3.65s both;
+}
 
+.hero-description {
+    animation: heroFadeUp 0.9s ease-out 3.8s both;
+}
+
+.hero-buttons {
+    animation: heroFadeUp 0.9s ease-out 3.95s both;
+}
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* =====================================================
    HERO CARD
    ===================================================== */
@@ -350,7 +378,50 @@ transform: none;
     opacity: 0.6;
     max-width: 300px;
 }
+/* SERVICES REVEAL ANIMATION */
 
+.service-card {
+    opacity: 0;
+}
+
+.service-card.show {
+    animation: serviceFadeUp 0.7s ease-out both;
+}
+.service-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.service-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes serviceFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* =====================================================
    ABOUT
@@ -398,6 +469,34 @@ transform: none;
     border-bottom: 1px solid #2c211a;
     padding-bottom: 5px;
 }
+/* ABOUT SCROLL ANIMATION */
+
+.about-number,
+.about-text {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+.about.show .about-number {
+    animation: aboutReveal 0.8s ease-out 0.25s both;
+}
+
+.about.show .about-text {
+    animation: aboutReveal 0.9s ease-out 0.45s both;
+}
+
+@keyframes aboutReveal {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 /* =====================================================
@@ -436,7 +535,36 @@ transform: none;
     font-size: 12px;
     opacity: 0.55;
 }
+/* WORK SCROLL ANIMATION */
 
+.work-card {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+.work-card.show:nth-child(1) {
+    animation: workFadeUp 0.8s ease-out 0.15s both;
+}
+
+.work-card.show:nth-child(2) {
+    animation: workFadeUp 0.8s ease-out 0.30s both;
+}
+
+.work-card.show:nth-child(3) {
+    animation: workFadeUp 0.8s ease-out 0.45s both;
+}
+
+@keyframes workFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* =====================================================
    PRICING
