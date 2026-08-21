@@ -60,3 +60,24 @@ const serviceObserver = new IntersectionObserver(
 serviceCards.forEach((card) => {
     serviceObserver.observe(card);
 });
+// ABOUT SCROLL ANIMATION
+
+const aboutText = document.querySelector('.about-text');
+
+if (aboutText) {
+    const aboutObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    aboutObserver.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    aboutObserver.observe(aboutText);
+}
