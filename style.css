@@ -231,22 +231,22 @@ img {
 /* =========================
    HERO TEXT ANIMATION
 ========================= */
-
 .hero-text .eyebrow {
-    animation: heroFadeUp 0.8s ease-out both;
+    animation: heroFadeUp 0.8s ease-out 4.8s both;
 }
 
 .hero-text h1 {
-    animation: heroFadeUp 0.9s ease-out 0.15s both;
+    animation: heroFadeUp 0.9s ease-out 4.95s both;
 }
 
 .hero-description {
-    animation: heroFadeUp 0.9s ease-out 0.3s both;
+    animation: heroFadeUp 0.9s ease-out 5.1s both;
 }
 
 .hero-buttons {
-    animation: heroFadeUp 0.9s ease-out 0.45s both;
+    animation: heroFadeUp 0.9s ease-out 5.25s both;
 }
+
 
 @keyframes heroFadeUp {
     from {
