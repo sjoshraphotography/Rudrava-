@@ -64,13 +64,13 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    width: 175px;
+    width: 140px;
     height: auto;
     overflow: visible;
 }
 
 .logo img {
-    width: 175px;
+    width: 140px;
     height: auto;
     display: block;
     mix-blend-mode: multiply;
