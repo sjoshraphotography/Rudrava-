@@ -381,9 +381,12 @@ transform: none;
 /* SERVICES REVEAL ANIMATION */
 
 .service-card {
-    animation: serviceFadeUp 0.7s ease-out both;
+    opacity: 0;
 }
 
+.service-card.show {
+    animation: serviceFadeUp 0.7s ease-out both;
+}
 .service-card:nth-child(1) {
     animation-delay: 0.1s;
 }
