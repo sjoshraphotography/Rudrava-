@@ -983,28 +983,32 @@ footer {
    SUBTLE PREMIUM TEXTURE
    ========================================= */
 
-body {
-    background-color: #eee6da;
-    background-image:
-        radial-gradient(rgba(44, 33, 26, 0.035) 0.7px, transparent 0.7px);
-    background-size: 5px 5px;
-}
+/* =========================================
+   PREMIUM PAPER TEXTURE
+   ========================================= */
 
-/* Cream sections */
 .hero,
 .about,
 .work,
 .process {
     background-color: #eee6da;
+    background-image:
+        radial-gradient(
+            rgba(44, 33, 26, 0.055) 0.8px,
+            transparent 0.8px
+        );
+    background-size: 4px 4px;
 }
 
-/* Dark sections */
 .services,
 .pricing,
 .contact,
 footer {
     background-color: #2c211a;
     background-image:
-        radial-gradient(rgba(255, 255, 255, 0.025) 0.7px, transparent 0.7px);
-    background-size: 5px 5px;
+        radial-gradient(
+            rgba(255, 255, 255, 0.045) 0.8px,
+            transparent 0.8px
+        );
+    background-size: 4px 4px;
 }
