@@ -997,6 +997,13 @@ footer {
         bottom: 60px ;
         opacity: 0.055;
     }
+}@media (max-width: 600px) {
+    .hero-card::before {
+        left: 70px !important;
+        right: auto !important;
+        bottom: 10px !important;
+        transform: none !important;
+    }
 }
 /* =========================================
    SUBTLE PREMIUM TEXTURE
