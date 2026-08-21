@@ -62,22 +62,22 @@ serviceCards.forEach((card) => {
 });
 // ABOUT SCROLL ANIMATION
 
-const aboutText = document.querySelector('.about-text');
+const aboutSection = document.querySelector('#about');
 
-if (aboutText) {
+if (aboutSection) {
     const aboutObserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                    aboutObserver.unobserve(entry.target);
+                    aboutSection.classList.add('show');
+                    aboutObserver.unobserve(aboutSection);
                 }
             });
         },
         {
-            threshold: 0.2
+            threshold: 0.15
         }
     );
 
-    aboutObserver.observe(aboutText);
+    aboutObserver.observe(aboutSection);
 }
