@@ -469,7 +469,55 @@ transform: none;
     border-bottom: 1px solid #2c211a;
     padding-bottom: 5px;
 }
+/* ABOUT SCROLL ANIMATION */
 
+.about-text .eyebrow {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.about-text h2 {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.about-text p:not(.eyebrow) {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.about-text .text-link {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.about-text.show .eyebrow {
+    animation: aboutFadeUp 0.7s ease-out 0.1s both;
+}
+
+.about-text.show h2 {
+    animation: aboutFadeUp 0.8s ease-out 0.25s both;
+}
+
+.about-text.show p:not(.eyebrow) {
+    animation: aboutFadeUp 0.8s ease-out 0.4s both;
+}
+
+.about-text.show .text-link {
+    animation: aboutFadeUp 0.8s ease-out 0.55s both;
+}
+
+@keyframes aboutFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* =====================================================
    WORK
