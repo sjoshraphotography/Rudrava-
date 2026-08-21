@@ -723,14 +723,14 @@ footer {
         right: auto;
         margin: 0;
         transform: none;
-        width: 115px;
+        width: 85px;
         height: auto;
         overflow: visible;
         flex-shrink: 0;
     }
 
     .nav .logo img {
-        width: 115px;
+        width: 85px;
         height: auto;
         display: block;
     }
